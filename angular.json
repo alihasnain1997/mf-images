@@ -31,7 +31,9 @@
               "path": "extra-webpack.config.js",
               "libraryName": "mf-images",
               "libraryTarget": "umd"
-            }
+            },
+            "deployUrl": "http://localhost:4204/"
+
           },
           "configurations": {
             "production": {
