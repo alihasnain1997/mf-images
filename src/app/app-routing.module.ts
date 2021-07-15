@@ -7,7 +7,11 @@ import { SamuraiComponent } from "./samurai/samurai.component";
 
 const routes: Routes = [
   { path: "image/ninja", component: NinjaComponent },
-  { path: "image/samurai", component:  SamuraiComponent},
+  { path: "image/samurai", component: SamuraiComponent },
+  {
+    path: 'image/lazy',
+    loadChildren: () => import('./lazy/lazy.module').then(m => m.LazyModule)
+  },
   { path: "**", component: EmptyRouteComponent }
 ];
 
